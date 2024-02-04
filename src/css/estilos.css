@@ -1,0 +1,154 @@
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.cabecalho {
+    background-color: rgba(0, 0, 0, 0.107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #032607;
+}
+
+.cabecalho img {
+    width: 60%;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    padding: 40px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.cabecalho .menu li:hover {
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 40%, transparent 65%);
+}
+
+.home .imagem {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2px;
+    border-bottom:2px solid #fff;
+    z-index: 1;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 80px 80px 70px;
+}
+
+.home .informacoes img {
+    max-width: 150px;
+}
+
+.home .informacoes .titulo {
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home .informacoes .texto {
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-botao {
+    background-color: rgba(255, 255, 255, .1);
+    padding: 10px 20px 10px 10px;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 100px;
+}
+
+.btn-botao:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.comprar .info {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+
+.comprar .info::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 15%, transparent 25%);
+}
+
+.comprar .imagem {
+    width: 100%;
+    object-fit: cover;
+}
+
+.comprar .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 80px 90px 70px;
+    width: 40%;
+
+}
+
+.comprar .informacoes img {
+    max-width: 150px;
+}
+
+.comprar .informacoes .titulo {
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.comprar .informacoes .texto {
+    font-weight: bold;
+}
+
+.roda-pe{
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #12f2c5;
+}
+
+.roda-pe .menu{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
